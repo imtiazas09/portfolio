@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtiaz Ahmad - Frontend Developer Resume</title>
+    <style>
+        /* Resume Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .resume-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 25mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        
+        /* Header Styles */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #dbeafe;
+        }
+        
+        .subsection {
+            margin-bottom: 15px;
+        }
+        
+        .subsection-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        
+        /* List Styles */
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        li:before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Bold Text */
+        .bold {
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+        /* Project Cards */
+        .project-card {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .project-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+        }
+        
+        .project-tech {
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .project-links {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .link {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        /* Two Column Layout */
+        .two-column {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                padding: 20mm;
+                max-width: 100%;
+                min-height: auto;
+            }
+            
+            .no-print {
+                display: none;
+            }
+        }
+        
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="name">Imtiaz Ahmad</h1>
+            <div class="title">Frontend Developer | Self-Taught Developer | BSSE Student</div>
+            <div class="contact-info">
+                <div class="contact-item">📍 <span class="bold">Bahawalpur, Punjab, Pakistan</span></div>
+                <div class="contact-item">📧 <span class="bold">imtiaz.ahmad@example.com</span></div>
+                <div class="contact-item">📱 <span class="bold">+92 XXX XXXXXXX</span></div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">🔗 <span class="bold">GitHub:</span> github.com/imtiaz-ahmad</div>
+                <div class="contact-item">🔗 <span class="bold">LinkedIn:</span> linkedin.com/in/imtiaz-ahmad-dev</div>
+                <div class="contact-item">🌐 <span class="bold">Portfolio:</span> imtiaz-ahmad.netlify.app</div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-title">🎓 Education</div>
+            <div class="subsection">
+                <div class="subsection-title">Bachelor of Science in Software Engineering (BSSE)</div>
+                <div><span class="bold">The Islamia University of Bahawalpur</span></div>
+                <div><span class="bold">Expected Graduation: 2027</span> | CGPA: [Add if above 3.0]</div>
+                <div style="margin-top: 8px;"><span class="bold">Relevant Coursework:</span> Object-Oriented Programming, Data Structures, Web Technologies, Database Systems, Software Engineering Principles</div>
+            </div>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="section">
+            <div class="section-title">💻 Technical Skills</div>
+            <div class="two-column">
+                <div class="column">
+                    <div class="subsection">
+                        <div class="subsection-title">Frontend Development</div>
+                        <ul>
+                            <li><span class="bold">Core Technologies:</span> HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li><span class="bold">Framework/Library:</span> React.js, Next.js (Basic)</li>
+                            <li><span class="bold">Styling:</span> Tailwind CSS, Bootstrap, CSS Grid, Flexbox</li>
+                            <li><span class="bold">State Management:</span> Context API, Redux Toolkit (Learning)</li>
+                            <li><span class="bold">Tools:</span> Git, GitHub, VS Code, Chrome DevTools, npm/yarn</li>
+                            <li><span class="bold">Concepts:</span> Responsive Design, REST APIs, DOM Manipulation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="subsection">
+                        <div class="subsection-title">Currently Learning</div>
+                        <ul>
+                            <li><span class="bold">TypeScript, Node.js (Backend), MongoDB</span></li>
+                            <li><span class="bold">Advanced React Patterns</span></li>
+                            <li><span class="bold">Performance Optimization</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <div class="section-title">🚀 Projects (Self-Learned & Implemented)</div>
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-title">E-Commerce Store - "ShopEasy"</div>
+                <div class="project-tech">React, Tailwind CSS, FakeStore API</div>
+                <ul>
+                    <li><span class="bold">Self-Learned Project:</span> Built from scratch by following online tutorials and documentation</li>
+                    <li><span class="bold">Developed a fully responsive e-commerce interface</span> with product listing and cart functionality</li>
+                    <li><span class="bold">Implemented features:</span> Product search, category filtering, add to cart, and wishlist</li>
+                    <li><span class="bold">Used FakeStore API</span> to fetch product data dynamically</li>
+                </ul>
+                <div class="project-links">
+                    <span class="bold">Tech Stack:</span> React.js, Tailwind CSS, React Router, Axios
+                    <div style="margin-top: 5px;">
+                        <span class="bold">Live Demo:</span> <a href="#" class="link">shopeasy-imtiaz.netlify.app</a> |
+                        <span class="bold">GitHub:</span> <a href="#" class="link">github.com/imtiaz-ahmad/ecommerce-shop</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-title">Weather Application</div>
+                <div class="project-tech">JavaScript, OpenWeather API</div>
+                <ul>
+                    <li><span class="bold">Created a weather dashboard</span> that shows current weather and 5-day forecast</li>
+                    <li><span class="bold">Implemented location detection</span> using browser geolocation API</li>
+                    <li><span class="bold">Added temperature unit conversion and weather icons</span></li>
+                    <li><span class="bold">Self-Taught Skills:</span> API integration, async/await, localStorage</li>
+                </ul>
+                <div class="project-links">
+                    <span class="bold">Tech Stack:</span> HTML, CSS, JavaScript, REST APIs
+                    <div style="margin-top: 5px;">
+                        <span class="bold">Live Demo:</span> <a href="#" class="link">weather-imtiaz.netlify.app</a> |
+                        <span class="bold">GitHub:</span> <a href="#" class="link">github.com/imtiaz-ahmad/weather-app</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-title">Personal Portfolio Website</div>
+                <div class="project-tech">HTML, CSS, JavaScript</div>
+                <ul>
+                    <li><span class="bold">Designed and coded a responsive portfolio website from scratch</span></li>
+                    <li><span class="bold">Implemented dark/light mode toggle and smooth scrolling</span></li>
+                    <li><span class="bold">Added project showcase with filtering options</span></li>
+                    <li><span class="bold">Learning Outcomes:</span> Responsive design, CSS animations, JavaScript DOM manipulation</li>
+                </ul>
+                <div class="project-links">
+                    <span class="bold">Tech Stack:</span> HTML5, CSS3, Vanilla JavaScript
+                    <div style="margin-top: 5px;">
+                        <span class="bold">Live Demo:</span> <a href="#" class="link">imtiaz-ahmad.netlify.app</a> |
+                        <span class="bold">GitHub:</span> <a href="#" class="link">github.com/imtiaz-ahmad/portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="section">
+            <div class="section-title">🏆 Self-Learning Journey & Achievements</div>
+            <div class="two-column">
+                <div class="column">
+                    <div class="subsection">
+                        <div class="subsection-title">Online Learning Track Record</div>
+                        <ul>
+                            <li><span class="bold">Completed 100+ hours</span> of frontend development courses</li>
+                            <li><span class="bold">Solved 50+ coding challenges</span> on LeetCode and HackerRank</li>
+                            <li><span class="bold">Built 5+ practical projects</span> independently</li>
+                            <li><span class="bold">Regularly contribute to GitHub</span> with daily commits streak</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="subsection">
+                        <div class="subsection-title">Certifications</div>
+                        <ul>
+                            <li><span class="bold">Meta Frontend Developer Certificate</span> - Coursera (In Progress)</li>
+                            <li><span class="bold">JavaScript Algorithms Certification</span> - freeCodeCamp</li>
+                            <li><span class="bold">Responsive Web Design</span> - freeCodeCamp</li>
+                            <li><span class="bold">React Basics</span> - Scrimba</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="section">
+            <div class="section-title">📌 Additional Information</div>
+            <div class="two-column">
+                <div class="column">
+                    <ul>
+                        <li><span class="bold">Languages:</span> English (Professional), Urdu (Native), Punjabi (Conversational)</li>
+                        <li><span class="bold">Learning Methodology:</span> Project-based learning, documentation reading</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li><span class="bold">Availability:</span> 15-20 hours/week for freelance/internship</li>
+                        <li><span class="bold">Freelance Platforms:</span> Upwork, Fiverr (Beginner Level)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">🎯 Professional Summary</div>
+            <p style="line-height: 1.6; font-size: 15px;">
+                <span class="bold">Self-motivated Software Engineering student with strong foundation in frontend technologies acquired through dedicated self-learning.</span> Demonstrated ability to learn and implement modern web technologies independently. <span class="bold">Seeking opportunities to contribute to real-world projects while continuing to expand technical expertise.</span>
+            </p>
+        </div>
+
+        <!-- Print Button (Visible only on screen) -->
+        <div class="no-print" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
+            <button onclick="window.print()" style="background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; cursor: pointer;">
+                📥 Save as PDF / Print Resume
+            </button>
+            <p style="margin-top: 10px; color: #6b7280; font-size: 14px;">Click above button and choose "Save as PDF"</p>
+        </div>
+    </div>
+
+    <script>
+        // Auto-hide print button after printing
+        window.onafterprint = function() {
+            document.querySelector('.no-print').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
